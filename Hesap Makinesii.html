@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+
+    <style>
+
+input[type=button]{
+
+    margin: 3px;
+    padding: 5x;
+    height: 35px;
+    width: 55px;
+
+}
+
+div{ background-color: cyan;}
+
+    </style>
+
+
+</head>
+<body bgcolor="cyan">
+
+<center>
+
+    <h1>JS kullanarak Basit Hesap İşlemkeri</h1><hr>
+    <label>Sayı 1 :</label>
+    <input type="number" id="sayi1">   
+    <label>Sayı 2 :</label>
+    <input type="number" id="sayi2">
+    <input type="button" value="+" onclick="topla()">
+    <input type="button" value="-" onclick="fark()">
+    <input type="button" value="*" onclick="carp()">
+    <input type="button" value="/" onclick="bol()">
+<hr>
+
+<h1 id="Sonuc"></h1>
+</center>
+    <script>
+function topla(){
+var sayi1 = parseInt(document.getElementById('sayi1').value);
+var sayi2 = parseInt(document.getElementById('sayi2').value);
+document.getElementById('Sonuc').innerText=sayi1+sayi2;
+}
+function fark(){
+var sayi1 =document.getElementById('sayi1').value;
+var sayi2 =document.getElementById('sayi2').value;
+document.getElementById('Sonuc').innerText=sayi1-sayi2;
+}
+function carp(){
+var sayi1 =document.getElementById('sayi1').value;
+var sayi2 =document.getElementById('sayi2').value;
+document.getElementById('Sonuc').innerText=sayi1*sayi2;
+}
+function bol(){
+var sayi1 =document.getElementById('sayi1').value;
+var sayi2 =document.getElementById('sayi2').value;
+document.getElementById('Sonuc').innerText=sayi1/sayi2;
+}
+
+
+
+    </script>
+</body>
+</html>
